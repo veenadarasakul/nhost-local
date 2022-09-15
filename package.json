@@ -1,0 +1,16 @@
+{
+  "name": "nhost-local",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:veenadarasakul/nhost-local.git",
+  "author": "veenadarasakul <veenadarasakul@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "client": "cd web && yarn dev",
+    "server": "nhost up"
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
